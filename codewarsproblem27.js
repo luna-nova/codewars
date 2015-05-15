@@ -18,3 +18,12 @@ function DNAStrand(dna){
   }
   return otherSide.join("");
 }
+
+function DNAStrand(dna) {
+  var pairs = { A: "T", T: "A", G: "C", C: "G" };
+  var otherSide = "";
+  for (var i = 0; i < dna.length; i++) {
+    otherSide += pairs[dna[i]];
+  }
+  return otherSide;
+}
